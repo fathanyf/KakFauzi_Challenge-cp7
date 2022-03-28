@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body style="text-align: center">
+    <div class="container">
+      <%- include('partials/navbar') %>
+      <div class="mt-1">
+        <% if (typeof messages != "undefined" && messages) { %>
+        <h6 style="color: red"><%= messages.error; %></h6>
+        <% } %>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="card col-lg-4">
+          <div class="card-header text-center font-weight-bold">FORM LOGIN</div>
+          <div class="card-body">
+            <form method="POST" action="/login">
+              <div class="form-group">
+                <label for="username">Username :</label>
+                <input
+                  type="text"
+                  name="username"
+                  class="form-control"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password :</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="reset" class="btn btn-danger">Clear</button>
+              </div>
+            </form>
+            <div class="mt-4">
+              <h6>Don't have an account yet?</h6>
+              <a href="/register">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

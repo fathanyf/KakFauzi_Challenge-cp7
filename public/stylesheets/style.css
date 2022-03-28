@@ -1,0 +1,80 @@
+@media (min-width: 860px){
+  .canvas {
+    margin: 0 150px;
+  }}
+
+form {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+#tombol {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  font-weight: 700;
+  background-color: #157eab;
+  color: white;
+  cursor: pointer;
+}
+.title {
+  margin-top: 10x;
+  text-align: center;
+}
+p {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+#player, #p-score, #c-score, .computer, .vs {
+  font-size: 20px;
+  font-weight: 800;
+}
+table {
+  width:100%;}
+  tr {
+    height: 80px;}
+  th, td {
+    width: 33%;
+  }
+.com, .img-com {
+  width: 100px;
+  border-radius: 25px;
+  display: inline-block;
+  height: 90px;
+  padding-top: 10px;
+}
+  #batu, #kertas, #gunting, .img{
+    width: 60px;
+    height: 60px;
+  }
+.com:hover {
+  background-color: #fde9b6;
+  cursor: pointer;
+}
+#batu:hover, #kertas:hover, #gunting:hover {
+  width: 80px;
+  height: 80px;
+}
+#result {
+  font-size: 50px;
+  font-weight: 800;
+  color: red;
+  border-radius: 20px;
+  height: 80px;
+}
+#refresh {
+  margin: 0 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+.close {
+  text-align: right;
+  margin-right: 20px;
+  font-size: 40px;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}

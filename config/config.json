@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "nanda2202",
+    "database": "db_dev",
+    "host": "127.0.0.1",
+    "dialect": "challenge7"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "nanda2202",
+    "database": "db_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "nanda2202",
+    "database": "db_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

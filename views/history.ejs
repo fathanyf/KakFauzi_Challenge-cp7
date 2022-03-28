@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar') %>
+      <h1>Wellcome <%= a.username %> </h1>
+      <div class="">
+        <a href="/createroom" class="btn btn-primary">Create Room</a>
+      </div>
+    
+      <table style="width: 80%;" class="table table-hover justify-content-center">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Time</th>
+            <th scope="col">Room Name</th>
+            <th scope="col">Score</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <% a.forEach(i => { %>
+          <tbody>
+            <% if(i.UserHistory !== null) { %>
+            <tr>
+              <th scope="raw"><%= i.UserHistory.id %></th>
+              <td><%= i.UserHistory.updatedAt %></td>
+              <td><%= i.UserHistory.room_name %></td>
+              <td><%= i.UserHistory.score %></td>
+              <td><a href="/game" class="btn btn-primary">Play</a></td>
+            </tr>
+            <% } %>
+          </tbody>
+          <% }) %>
+      </table>
+
+  </body>
+</html>
